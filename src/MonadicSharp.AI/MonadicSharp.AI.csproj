@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>MonadicSharp.AI</RootNamespace>
+
+    <PackageId>MonadicSharp.AI</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Danny4897</Authors>
+    <Description>AI-specific extensions for MonadicSharp: typed error handling for LLM APIs, exponential backoff retry, agent execution tracing, structured output validation, and streaming completion support. The functional reliability layer for enterprise .NET AI systems.</Description>
+    <PackageTags>ai;llm;agents;semantic-kernel;railway-oriented-programming;result;functional;error-handling;retry;streaming;monadic</PackageTags>
+    <PackageProjectUrl>https://github.com/Danny4897/MonadicSharp.AI</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/Danny4897/MonadicSharp.AI</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>$(NoWarn);1591</NoWarn>
+    <PackageReleaseNotes>v1.0.0: Initial release — AiError, RetryResult with exponential backoff, AgentResult with execution tracing, ValidatedResult for structured LLM output, StreamResult for streaming completions, SemanticKernelBridge.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- MonadicSharp core — Railway-Oriented Programming base types -->
+    <PackageReference Include="MonadicSharp" Version="1.4.0" />
+    <!-- Provider-agnostic LLM abstractions (IChatClient, IEmbeddingGenerator) -->
+    <PackageReference Include="Microsoft.Extensions.AI.Abstractions" Version="9.5.0" />
+  </ItemGroup>
+
+</Project>
