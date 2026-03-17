@@ -5,7 +5,9 @@ obj/
 *.suo
 .vs/
 *.nupkg
+!packages/*.nupkg
 *.snupkg
+!packages/*.snupkg
 
 ## Rider / VS / VSCode
 .idea/
