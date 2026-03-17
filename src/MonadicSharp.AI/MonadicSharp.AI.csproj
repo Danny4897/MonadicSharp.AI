@@ -7,7 +7,7 @@
     <RootNamespace>MonadicSharp.AI</RootNamespace>
 
     <PackageId>MonadicSharp.AI</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.1.0</PackageVersion>
     <Authors>Danny4897</Authors>
     <Description>AI-specific extensions for MonadicSharp: typed error handling for LLM APIs, exponential backoff retry, agent execution tracing, structured output validation, and streaming completion support. The functional reliability layer for enterprise .NET AI systems.</Description>
     <PackageTags>ai;llm;agents;semantic-kernel;railway-oriented-programming;result;functional;error-handling;retry;streaming;monadic</PackageTags>
@@ -21,7 +21,8 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn>
-    <PackageReleaseNotes>v1.0.0: Initial release — AiError, RetryResult with exponential backoff, AgentResult with execution tracing, ValidatedResult for structured LLM output, StreamResult for streaming completions, SemanticKernelBridge.</PackageReleaseNotes>
+    <PackageReleaseNotes>v1.1.0: Added AiRecoveryPredicates (typed Func&lt;Error,bool&gt; for AI error codes, composable with MonadicSharp.Recovery) and AiSelfHealingExtensions (WithSelfHealingAsync + TryParseJson — Amber-track JSON repair via IChatClient, no extra dependencies).
+v1.0.0: Initial release — AiError, RetryResult with exponential backoff, AgentResult with execution tracing, ValidatedResult for structured LLM output, StreamResult for streaming completions, SemanticKernelBridge.</PackageReleaseNotes>
   </PropertyGroup>
 
   <ItemGroup>
