@@ -7,6 +7,9 @@
 
 AI-specific extensions for [MonadicSharp](https://www.nuget.org/packages/MonadicSharp/). Typed error handling, exponential backoff retry, execution tracing, structured output validation, and streaming — all composable with `Result<T>`.
 
+Topics:
+csharp dotnet llm anthropic claude ai-integration error-handling retry nuget dotnet8
+
 ```bash
 dotnet add package MonadicSharp.AI
 ```
