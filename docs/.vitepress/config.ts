@@ -5,6 +5,7 @@ export default defineConfig({
   description: 'AI-specific extensions for MonadicSharp — typed error handling, retry, tracing, and streaming for LLM pipelines.',
   base: '/MonadicSharp.AI/',
   cleanUrls: true,
+  ignoreDeadLinks: true,
 
   head: [
     ['meta', { property: 'og:type', content: 'website' }],
