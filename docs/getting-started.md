@@ -1,5 +1,8 @@
 # Getting Started
 
+[![NuGet](https://img.shields.io/nuget/v/MonadicSharp.AI.svg?style=flat-square)](https://www.nuget.org/packages/MonadicSharp.AI/) [![NuGet Downloads](https://img.shields.io/nuget/dt/MonadicSharp.AI.svg?style=flat-square)](https://www.nuget.org/packages/MonadicSharp.AI/)
+
+
 MonadicSharp.AI extends [MonadicSharp](https://danny4897.github.io/MonadicSharp/) with five building blocks for working with LLMs — all returning `Result<T>` so they compose cleanly with the rest of your pipeline.
 
 ## Install
