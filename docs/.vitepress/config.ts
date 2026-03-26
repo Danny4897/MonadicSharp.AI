@@ -36,8 +36,30 @@ export default defineConfig({
       {
         text: 'Ecosystem',
         items: [
-          { text: 'MonadicSharp Core', link: 'https://danny4897.github.io/MonadicSharp/' },
-          { text: 'NuGet', link: 'https://www.nuget.org/packages/MonadicSharp.AI' },
+          {
+            text: 'Core',
+            items: [
+              { text: 'MonadicSharp', link: 'https://danny4897.github.io/MonadicSharp/' },
+              { text: 'MonadicSharp.Framework', link: 'https://danny4897.github.io/MonadicSharp.Framework/' },
+            ],
+          },
+          {
+            text: 'Extensions',
+            items: [
+              { text: 'MonadicSharp.AI', link: 'https://danny4897.github.io/MonadicSharp.AI/' },
+              { text: 'MonadicSharp.Recovery', link: 'https://danny4897.github.io/MonadicSharp.Recovery/' },
+              { text: 'MonadicSharp.Azure', link: 'https://danny4897.github.io/MonadicSharp.Azure/' },
+              { text: 'MonadicSharp.DI', link: 'https://danny4897.github.io/MonadicSharp.DI/' },
+            ],
+          },
+          {
+            text: 'Tooling',
+            items: [
+              { text: 'MonadicLeaf', link: 'https://danny4897.github.io/MonadicLeaf/' },
+              { text: 'MonadicSharp × OpenCode', link: 'https://danny4897.github.io/MonadicSharp-OpenCode/' },
+              { text: 'AgentScope', link: 'https://danny4897.github.io/AgentScope/' },
+            ],
+          },
         ],
       },
     ],
